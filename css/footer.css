@@ -1,0 +1,53 @@
+
+.footer {
+    background-color: #46808e;
+    position: relative;
+    padding: 50px 30px 0 30px;
+}
+
+.grid-wrapper {
+    display: grid;
+    /* 这一句用的是220px是因为有5列，四行文字220px，剩下的就正好剩四百左右px给logo使用 ，如果用250px的话，为logo剩下的空间不够大，会导致logo过小*/
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-gap: 2em;
+}
+
+.grid-logo {
+    display: grid;
+    /* background: #000; */
+    height: 400px;
+    grid-template-columns: repeat(3, auto);
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+}
+
+.footlogo {
+    width: 100%;
+}
+
+.grid-wrapper h1 {
+    font-size: 28px;
+    padding-bottom: 12px;
+}
+
+.grid-wrapper h1 a {
+    color: white;
+    transition: 0.6s;
+}
+
+.grid-wrapper h1 a:hover {
+    color: gold;
+}
+
+.footer hr {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.copyright {
+    display: flex;
+    justify-content: space-around;
+    color: grey;
+    padding: 30px;
+    font-weight: 700;
+}
