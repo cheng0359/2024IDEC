@@ -3,34 +3,26 @@
 
 <head>
     <!-- AOS CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/tu.css">
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/preload.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/page_second_half.css">
-    <link rel="stylesheet" href="./css/tu.css">
     <link rel="stylesheet" href="./css/tl.css">
-    <link rel="stylesheet" href="./css/aos.css" />
+    <link rel="stylesheet" href="./css/aos.css">
+    <script type="text/javascript" src="./extras/jquery.min.1.7.js"></script>
+    <script type="text/javascript" src="./extras/jquery-ui-1.8.20.custom.min.js"></script>
+    <script type="text/javascript" src="./extras/jquery.mousewheel.min.js"></script>
+    <script type="text/javascript" src="./extras/modernizr.2.5.3.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 
 <body>
-    <!-- 加载动画 -->
-    <script>
-        window.addEventListener('load', function () {
-            var loader = document.getElementById('preload');
-            setTimeout(function () {
-                loader.style.display = 'none';
-            }, 2000);
-        });
-    </script>
-    <div id="preload" class="preload">
-        <link rel="stylesheet" href="./preload.css">
-        <img src="./loading.gif" alt="Loading...">
-    </div>
-
     <!-- 导航栏 -->
     <section class="navbar" id="navbar">
         <!-- logo部分 -->
@@ -76,7 +68,7 @@
             </li>
             <li class="dropdown-menu">
 
-                <a href="#" class="dropdown-a">
+                <a href="./pages/notebook.html" class="dropdown-a">
                     <img src="./images/lab1.svg" alt="" class="icon4">
                     <img src="./images/lab2.svg" alt="" class="icon_lab4">
                     Lab Notebook
@@ -85,7 +77,7 @@
                     <a href="#" class="dropdown-page cool-link2">
                         Experiments
                     </a>
-                    <a href="#" class="dropdown-page cool-link2">
+                    <a href="./pages/notebook.html" class="dropdown-page cool-link2">
                         Notebook
                     </a>
                     <a href="#" class="dropdown-page cool-link2">
@@ -97,7 +89,7 @@
                 </div>
             </li>
             <li class="dropdown-menu">
-                <a href="#" class="dropdown-a">
+                <a href="./pages/member.html" class="dropdown-a">
                     <img src="./images/single_gear.gif" alt="" class="icon2" id="gif-image">
                     Team
                 </a>
@@ -152,6 +144,22 @@
         });
     </script>
 
+
+
+    <!-- 加载动画 -->
+    <script>
+        window.addEventListener('load', function () {
+            var loader = document.getElementById('preload');
+            setTimeout(function () {
+                loader.style.display = 'none';
+            }, 2000);
+        });
+    </script>
+    <div id="preload" class="preload">
+        <link rel="stylesheet" href="./preload.css">
+        <img src="./loading.gif" alt="Loading...">
+    </div>
+
     <div class="titlebox">
         <h1 class="title" id="title">Lorem ipsum dolor elit. Officia, voluptatibus!</h1>
 
@@ -171,7 +179,8 @@
                 <img class="mid" src="./images/headpic/5.svg" alt="" id="mid0">
             </div>
             <!-- 夹在头和尾之间 -->
-            <section class="second_part" style="position: relative;top: 1000px; background: rgb(255, 127, 127);opacity: 0.2;">
+            <section class="second_part"
+                style="position: relative;top: 1000px; background: rgb(255, 127, 127);opacity: 0.2;">
                 <!-- gif盒子没有设置高度所以初始
             高度为0，给gif图片绝对定位以使其与波浪有合适的排版 -->
                 <div class="gif_box"><img id="gif" src="./images/PBAT1.gif" alt="GIF"></div>
@@ -333,7 +342,7 @@
                 <use xlink:href="#gentle-wave" x="5" y="20" fill="#a4d1cc" />
             </g>
         </svg>
-        </div>
+    </div>
     </div>
     <section class="footer">
 
